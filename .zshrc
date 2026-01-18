@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -125,7 +125,7 @@ alias n='nvim'        # Escribes 'n' y abre nvim vacío
 alias n.='nvim .'     # Escribes 'n.' y abre nvim en la carpeta actual (explorador)
 
 # python aliases
-alias py='python' 
+alias py='python'
 
 # sql-aliases
 alias sql-on='sudo systemctl start mssql-server'
@@ -136,8 +136,7 @@ alias sql-status='sudo systemctl status mssql-server'
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-#General variables 
+#General variables
 
 # Path for neovim review documents
 export nvimdocs="$HOME/Documentos/archivos-laptop-win-2025/Escritorio/courseSpace/neovim"
-#test
