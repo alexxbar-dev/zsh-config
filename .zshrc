@@ -119,6 +119,7 @@ alias cm='cmatrix'
 
 # Git aliases
 alias git-root='git rev-parse --show-toplevel'
+# Tambien puedes agregar un alias directo en la configuracion global de git
 
 # Neovim aliases
 alias n='nvim'        # Escribes 'n' y abre nvim vacío
@@ -131,6 +132,11 @@ alias py='python'
 alias sql-on='sudo systemctl start mssql-server'
 alias sql-off='sudo systemctl stop mssql-server'
 alias sql-status='sudo systemctl status mssql-server'
+
+# mongoDB aliases
+alias mongo-on='sudo systemctl start mongod'
+alias mongo-off='sudo systemctl stop mongod'
+alias mongo-status='sudo systemctl status mongod'
 
 # Set neovim as the main editor
 export EDITOR='nvim'
