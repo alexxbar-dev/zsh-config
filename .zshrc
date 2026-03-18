@@ -138,6 +138,13 @@ alias mongo-on='sudo systemctl start mongod'
 alias mongo-off='sudo systemctl stop mongod'
 alias mongo-status='sudo systemctl status mongod'
 
+# grubby aliases
+alias grubby-list='sudo grubby --info=ALL | grep -E "index|title"'
+alias grubby-def='sudo grubby --default-kernel'
+# Muestra el kernel al que el sistema esta apuntando para el reinicio, es decir si la version del kernel cambiara en el reboot
+# A diferencia con uname -a que muestra el kernel actual
+# sudo grubby --set-default-index=2
+
 # Set neovim as the main editor
 export EDITOR='nvim'
 export VISUAL='nvim'
@@ -150,3 +157,4 @@ export nvimdocs="$HOME/Documentos/archivos-laptop-win-2025/Escritorio/courseSpac
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=$HOME/.local/bin:$PATH
